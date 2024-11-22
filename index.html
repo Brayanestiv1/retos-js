@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+
+    <script>
+        // Solicitar el peso y la altura al usuario
+        let peso = prompt("Ingresa tu peso en kilogramos:");
+        let altura = prompt("Ingresa tu altura en metros:");
+
+        // Convertir los valores a números flotantes
+        peso = parseFloat(peso);
+        altura = parseFloat(altura);
+
+        // Calcular el IMC usando la fórmula
+        let imc = peso / (altura * altura);
+
+        // Mostrar el resultado en la consola
+        console.log("Tu BMI es " + imc);
+    </script>
+</body>
+</html>
